@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Services</title>
+<style>
+        body{
+        background-color: black;
+    }
+    li{
+        margin: 23px;
+        list-style: none;
+        
+    }
+    ul{
+        display: flex;
+    }
+    ul > li > a{
+        text-decoration: none;
+        font-size: x-large;
+        color: white;
+    }
+    ul > li > a:hover{
+        text-decoration: none;
+        font-size: x-large;
+        color: rgb(34, 194, 167);
+    }
+    .banner-text{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+}
+.banner-text>h2{
+  text-align: center;
+  font-size: 65px;
+  margin:0;
+  color: firebrick;
+  text-transform: uppercase;
+  text-shadow: -1px 1px 0 #fff,
+                          1px 1px 0 #fff,
+                         1px -1px 0 #fff,
+                        -1px -1px 0 #fff;
+} 
+.box{
+  font-size: 35px;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: cursive;
+}
+.b1{
+  animation: ani1 15s infinite;
+}
+.b2{
+  animation: ani2 15s infinite;
+}
+.b3{
+  animation: ani3 15s infinite;
+}
+.b1>span{
+  font-weight: bold;
+  color: cadetblue;
+}
+.b2>span{
+  font-weight: bold;
+  color: cadetblue;
+}
+.b3>span{
+  font-weight: bold;
+  color: cadetblue;
+}
+
+@keyframes ani1{
+  20%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 1;
+  }
+  40%{
+   opacity: 0;
+  }
+}
+@keyframes ani2{
+  50%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 1;
+  }
+  70%{
+    opacity: 0;
+  }
+}
+@keyframes ani3{
+  80%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+</style>
+</head>
+<body>
+    <ul>
+        <li><a href="/">Home</a> </li> 
+        <li><a href="/about"> About Us</a></li> 
+        <li><a href="/service"> Services</a></li> 
+        <li><a href="/contact">Contact Us</a> </li> 
+    </ul>
+
+    <div class="banner">
+        <div class="banner-text ">
+          <h2 class="animate__animated animate__swing">Hello World!</h2>
+          <div class="text-wrapper">
+            <div class="box b1">This is <span>Jawad Ali</span></div>
+            <div class="box b2">This <span>is Service Us </span> ! </div>
+            <div class="box b3"><span>Page </span> redirection </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
